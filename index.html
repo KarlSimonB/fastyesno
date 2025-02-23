@@ -4,60 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yes/No</title>
-  <style>
-    /* Resetting default styles */
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(90deg, #0a2540, #1e90ff);
-      overflow: hidden;
-      color: white;
-    }
-
-    /* Container for the Yes/No text */
-    .container {
-      text-align: center;
-    }
-
-    /* Style for the answer text */
-    .answer {
-      font-size: 8rem;
-      font-weight: bold;
-      opacity: 0;
-      animation: fadeIn 2s ease-in-out forwards;
-    }
-
-    /* Fade-in animation */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="container">
     <div class="answer" id="answer"></div>
+    <div class="inner-container">
+              <div class="message">Voila!
+              </div>
+              <div class="secondary-message">
+               Figured i'd save you some time just giving you an answer right away...
+               Were you not ready? You can generate a new random answer below.
+              </div>
+              <button class="reload-button" onclick="location.reload()">
+                <i class="fas fa-sync-alt"></i> Try Again
+              </button>
+    </div>
   </div>
 
-  <script>
-    // Display a random Yes/No answer
-    window.onload = function() {
-      const answers = ['Yes', 'No'];
-      document.getElementById('answer').textContent = answers[Math.floor(Math.random() * answers.length)];
-    };
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

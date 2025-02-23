@@ -1,0 +1,116 @@
+/* Resetting default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(90deg, #0a2540, #1e90ff);
+    overflow: hidden;
+    color: white;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .inner-container {
+    max-width: 420px; /* Increased max width for bigger phones */
+    min-width: 280px; /* Min width */
+    margin-top: 10vh; /* Controlled spacing from top */
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.397);
+    margin-left: auto; /* Centers the box */
+    margin-right: auto; /* Centers the box */
+  }
+  
+  .answer {
+    font-size: 8rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .message {
+    font-size: 3rem; /* "Voila!" text size */
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .secondary-message {
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-bottom:15px;
+    color: #e0e0e075; /* Slightly faded color for secondary text */
+    white-space: pre-line;
+  }
+  
+/* Reload Button */
+.reload-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #2269b1;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24); /* Adding shadow to the button */
+  }
+  
+  /* Icon in button */
+  .reload-button i {
+    margin-right: 8px;
+  }
+  
+  /* Hover state: Subtle darkening */
+  .reload-button:hover {
+    background-color: #357ab7; /* Slightly darker blue on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+  }
+  
+  /* Inactive state (faded background) */
+  .reload-button:active {
+    background-color: #4a90e2; /* Keep it the same when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow on click */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
