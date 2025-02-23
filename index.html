@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yes/No</title>
+  <style>
+    /* Resetting default styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(90deg, #0a2540, #1e90ff);
+      overflow: hidden;
+      color: white;
+    }
+
+    /* Container for the Yes/No text */
+    .container {
+      text-align: center;
+    }
+
+    /* Style for the answer text */
+    .answer {
+      font-size: 8rem;
+      font-weight: bold;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="answer" id="answer"></div>
+  </div>
+
+  <script>
+    // Display a random Yes/No answer
+    window.onload = function() {
+      const answers = ['Yes', 'No'];
+      document.getElementById('answer').textContent = answers[Math.floor(Math.random() * answers.length)];
+    };
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
