@@ -1,3 +1,9 @@
+window.addEventListener('load', function() {
+    var script = document.createElement('script');
+    script.src = 'non-critical-script.js';
+    document.body.appendChild(script);
+});
+
 // Wait for the DOM to be fully loaded before running the script
 document.addEventListener("DOMContentLoaded", function() {
     const answers = ['Yes', 'No'];
