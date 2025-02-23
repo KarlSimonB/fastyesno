@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Author: Simon Bergstrand,
-    A fast Yes No answer generator. Simple but effective to load as fast as possible.">
-  <title>Yes/No</title>
+  <meta name="description" content="Get a quick Yes or No answer instantly. Our fast and simple decision maker helps you make choices in seconds. Try it now!">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fast Yes/No Answer Generator | Instant Decision Maker">
+  <meta property="og:description" content="Get a quick Yes or No answer instantly. Our fast and simple decision maker helps you make choices in seconds. Try it now!">
+  <meta property="og:url" content="https://fastyesno.netlify.app/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fast Yes/No Answer Generator | Instant Decision Maker">
+  <meta name="twitter:description" content="Get a quick Yes or No answer instantly. Our fast and simple decision maker helps you make choices in seconds. Try it now!">    
+    <title>Fast Yes/No Answer Generator | Instant Decision Maker</title>
   <style>
     /* Critical CSS for above-the-fold content */
     body, html {
@@ -18,13 +24,26 @@
 </style>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How does this Yes/No decision maker work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Yes/No decision maker generates a random Yes or No answer to help with quick decision making."
+        }
+      }]
+    }
+  </script>
 </head>
 <body>
   <div class="container">
     <div class="answer" id="answer"></div>
     <div class="inner-container">
-              <div class="message">Voila!
-              </div>
+        <h1 class="message">Voila!</h1>
               <div class="secondary-message">
                Figured i'd save you some time just giving you an answer right away...
                Were you not ready? You can generate a new random answer below.
