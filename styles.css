@@ -18,10 +18,10 @@ body, html {
   }
   
   .inner-container {
-    max-width: 420px; /* Increased max width for bigger phones */
+    max-width: 400px; /* Slightly smaller max-width for better mobile experience */
     min-width: 280px; /* Min width */
     margin-top: 10vh; /* Controlled spacing from top */
-    padding: 15px 20px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.397);
@@ -35,7 +35,7 @@ body, html {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
     margin-bottom: 20px;
-    margin-top: 100px;
+    margin-top: 100px; /* Reduced top margin to bring it closer */
   }
   
   @keyframes fadeIn {
@@ -50,21 +50,23 @@ body, html {
   .message {
     font-size: 3rem; /* "Voila!" text size */
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .secondary-message {
     font-size: 1rem;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right:20px;
-    margin-bottom:15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
     color: #e0e0e075; /* Slightly faded color for secondary text */
     white-space: pre-line;
+    line-height: 1.5;
+    text-align: center; /* Ensures the text is centered */
   }
   
-/* Reload Button */
-.reload-button {
+  /* Reload Button */
+  .reload-button {
     margin-top: 20px;
     margin-bottom: 10px;
     padding: 10px 20px;
@@ -83,7 +85,6 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24); /* Adding shadow to the button */
   }
   
-  /* Icon in button */
   .reload-button i {
     margin-right: 8px;
   }
@@ -99,6 +100,7 @@ body, html {
     background-color: #4a90e2; /* Keep it the same when clicked */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow on click */
   }
+  
   
   
   
